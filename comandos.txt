@@ -2,5 +2,5 @@ git init 	      	-> inicializa um repositório
 git status 	     	-> verificar se há algum arquivo a ser adicionado
 git add . 		    -> adiociona todos os arquivos para enviar ao repo
 git commit -m "" 	-> gera uma nova versão
-git push 		      -> envia para o repositórtio 
+git push 		     -> envia para o repositórtio 
 git clone <link>  -> clona para uma nova máquina
