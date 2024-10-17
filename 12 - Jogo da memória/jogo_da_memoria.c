@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include "../Biblio/q13.h"
 #define F0 printf("🍍|");
 #define F1 printf("🍌|");
 #define F2 printf("🍇|");
@@ -34,7 +35,7 @@ int main() {
 
   for (i = 10; i > 0; i--) {
 
-    system("clear");
+    clearr();
     printf("🎴🎴🎴🎴🎴🎴🎴🎴🎴🎴🎴🎴🎴🎴🎴🎴");
     printf("🎴🎴🎴🎴🎴🎴🎴🎴🎴🎴🎴🎴🎴🎴🎴\n");
     printf("  🏮🏮🏮🏮🏮  GAME DA MEMÓRIA ");
@@ -76,7 +77,7 @@ int main() {
 
   while (1) {
 
-    system("clear");
+    clearr();
     printf("🎴🎴🎴🎴🎴🎴🎴🎴🎴🎴🎴🎴🎴🎴🎴🎴");
     printf("🎴🎴🎴🎴🎴🎴🎴🎴🎴🎴🎴🎴🎴🎴🎴\n");
     printf("  🏮🏮🏮🏮🏮  GAME DA MEMÓRIA ");

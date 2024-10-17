@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include "../Biblio/q13.h"
 
 int main() {
 
@@ -14,7 +15,7 @@ int main() {
 
   while ( x[0] == 0 || x[1] == 0 || x[2] == 0 || x[3] == 0 ) {
 
-    system ("clear");
+    clearr();
     printf("🎴🎴🎴🎴🎴🎴🎴🎴🎴🎴🎴🎴🎴🎴🎴🎴🎴🎴\n");
     printf("🎴🎴    DESAFIO DA MATEMÁTICA   🎴🎴\n");
     printf("🎴🎴🏮🏮🏮🏮🏮🏮🏮🏮🏮🏮🏮🏮🏮🏮🎴🎴\n");
@@ -184,7 +185,7 @@ int main() {
 
   }
 
-  system ("clear");
+  clearr();
   printf("🏮🏮🏮🏮🏮🏮🏮🏮🏮🏮🏮🏮🏮🏮🏮🏮🏮🏮\n");
   printf("  🎐        PARABÉNS!!!        🎐\n");
   printf("  🎐VOCÊ COMPLETOU O DESAFIO DA🎐\n");

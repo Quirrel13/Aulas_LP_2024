@@ -1,8 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#define CYAN  printf("\033[0;36m");
-#define WHITE  printf("\033[0;37m");
+#include "../Biblio/cores.h"
+#include "../Biblio/q13.h"
+
 int main() {
 
   int cont, resp, ran, i, vet[20], esp[20];
@@ -42,7 +43,7 @@ int main() {
 
     CYAN
 
-    system("clear");
+    clearr();
 
     printf("|");
     for( i = 0; i < 20; i++ ) {

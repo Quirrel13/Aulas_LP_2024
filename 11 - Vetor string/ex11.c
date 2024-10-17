@@ -1,8 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#define CYAN    printf("\033[0;36m");
-#define WHITE   printf("\033[0;37m");
+#include "../Biblio/cores.h"
 
 int main() {
 
