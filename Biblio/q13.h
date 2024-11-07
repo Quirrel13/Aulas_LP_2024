@@ -5,11 +5,12 @@
 #include <termios.h>
 #include <unistd.h>
 
-#define CIMA 999
-#define BAIXO 888
-#define DIREITA 777
-#define ESQUERDA 666
-#define ENTER '\n'
+#define CIMA        999
+#define BAIXO       888
+#define DIREITA     777
+#define ESQUERDA    666
+#define BACKSPACE   8
+#define ENTER       10
 
 void clearr ();
 
