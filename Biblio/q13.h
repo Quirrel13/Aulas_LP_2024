@@ -1,19 +1,26 @@
+//#include "../Biblio/q13.h"
+
 #include <stdio.h>
+#include <stdlib.h>
 #include <termios.h>
 #include <unistd.h>
+
 #define CIMA 999
 #define BAIXO 888
 #define DIREITA 777
 #define ESQUERDA 666
-#define ENTER 555
+#define ENTER '\n'
+
+void clearr ();
+
+int getTecla();
+int getch(void);
+
+char *scans();
 
 void clearr () {
     for(int i = 0; i < 50 ; i++) printf("\n");
 }
-
-
-int getTecla();
-int getch(void);
 
 int getTecla() {
 
@@ -56,4 +63,12 @@ int getch(void) {
     tcsetattr( STDIN_FILENO, TCSANOW, &oldattr);
 
     return ch;
+}
+
+char *scans() {
+
+    int i = 1;
+    char tecla, *string = malloc( i * sizeof(char));
+
+
 }
