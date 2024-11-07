@@ -16,7 +16,7 @@ void clearr ();
 int getTecla();
 int getch(void);
 
-char *scans();
+char* scans();
 
 void clearr () {
     for(int i = 0; i < 50 ; i++) printf("\n");
@@ -65,10 +65,29 @@ int getch(void) {
     return ch;
 }
 
-char *scans() {
+char* scans() {
 
-    int i = 1;
-    char tecla, *string = malloc( i * sizeof(char));
+    int tam = 1;
+    char c, *str = malloc(tam * sizeof(char));
 
+    __fpurge(stdin);
+    do {
+        c = getchar();
+        // 
+        if(c == BACKSPACE) {
+            tam--;
+            str = realloc(str, tam * sizeof(char));
+        }
+        else if(c != ENTER) {
+            str[tam-1] = c;
+            tam++;
+            p = realloc(str, tam * sizeof(char));
+        }
+
+    } while(c != '\n');
+
+    str[tam-1] = '\0';
+
+    return str;
 
 }
