@@ -71,10 +71,10 @@ char* scans() {
     int tam = 1;
     char c, *str = malloc(tam * sizeof(char));
 
-    __fpurge(stdin);
+    //__fpurge(stdin);
     do {
         c = getchar();
-        // 
+        
         if(c == BACKSPACE) {
             tam--;
             str = realloc(str, tam * sizeof(char));
@@ -82,7 +82,7 @@ char* scans() {
         else if(c != ENTER) {
             str[tam-1] = c;
             tam++;
-            p = realloc(str, tam * sizeof(char));
+            str = realloc(str, tam * sizeof(char));
         }
 
     } while(c != '\n');
