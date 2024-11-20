@@ -2,8 +2,8 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include <termios.h>
-#include <unistd.h>
+//#include <termios.h>
+//#include <unistd.h>
 
 #define CIMA        999
 #define BAIXO       888
@@ -14,8 +14,8 @@
 
 void clearr ();
 
-int getTecla();
-int getch(void);
+//int getTecla();
+//int getch(void);
 
 char* scans();
 
@@ -23,7 +23,7 @@ void clearr () {
     for(int i = 0; i < 50 ; i++) printf("\n");
 }
 
-int getTecla() {
+/*int getTecla() {
 
     char press = getch();
 
@@ -64,7 +64,7 @@ int getch(void) {
     tcsetattr( STDIN_FILENO, TCSANOW, &oldattr);
 
     return ch;
-}
+}*/
 
 char* scans() {
 
